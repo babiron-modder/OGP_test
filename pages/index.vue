@@ -24,7 +24,8 @@ export default {
         { name: "twitter:image", content: 'https://ogp-test.vercel.app/ogp_image.png' },
       ]
     }
-  }}
+  }
+}
 </script>
 
 <style>
