@@ -5,6 +5,7 @@
       <h1 class="title">
         ogp_test
       </h1>
+      <p>v0.0.1</p>
     </div>
   </div>
 </template>
@@ -17,7 +18,10 @@ export default {
         { hid: 'og:description', property: 'og:description', content: '説明のテスト' },
         { hid: 'og:url', property: 'og:url', content: 'https://ogp-test.vercel.app/' },
         { hid: 'og:image', property: 'og:image', content: 'https://ogp-test.vercel.app/ogp_image.png' },
-        { name: "twitter:title", content: 'Twitter上でのタイトル' }
+        { name: "twitter:card", content: 'summary_large_image' },
+        { name: "twitter:title", content: 'Twitter上でのタイトル' },
+        { name: "twitter:description", content: 'Twitter上で説明' },
+        { name: "twitter:image", content: 'https://ogp-test.vercel.app/ogp_image.png' },
       ]
     }
   }}
