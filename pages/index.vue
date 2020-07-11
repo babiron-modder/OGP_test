@@ -5,13 +5,19 @@
       <h1 class="title">
         ogp_test
       </h1>
-      <p>v0.0.1</p>
+      <p>v0.0.2</p>
+      <p>{{date}}</p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      date: new Date() + "にアクセス",
+    }
+  },
   head() {
     return {
       meta: [
@@ -20,7 +26,7 @@ export default {
         { hid: 'og:image', property: 'og:image', content: 'https://ogp-test.vercel.app/ogp_image.png' },
         { name: "twitter:card", content: 'summary_large_image' },
         { name: "twitter:title", content: 'Twitter上でのタイトル' },
-        { name: "twitter:description", content: 'Twitter上で説明' },
+        { name: "twitter:description", content: this.date },
         { name: "twitter:image", content: 'https://ogp-test.vercel.app/ogp_image.png' },
       ]
     }
